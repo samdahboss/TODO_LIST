@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main class="app">
+            <h2>To-Do List App <img src="images/icon.png" class="icon" alt="App Icon"></h2>
+            <div class="input-container">
+                <input type="text" id="input" class="task-input" placeholder="Add your task" aria-label="New task">
+                <button id="add-btn" class="add-btn" aria-label="Add task">Add</button>
+            </div>
+            <ul id="tasks" class="task-list" aria-live="polite">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </main>
+        <section class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <hr class="ruler">
+            <ul id="completed-tasks-ul" class="completed-task-list task-list" aria-live="polite">
+                <!-- Completed tasks will be dynamically added here -->
+            </ul>
+        </section>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
